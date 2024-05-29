@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieStats4Nerds</title>
+
+    <!-- styles -->
+    <!-- wasn't working because you were missing the relation attribute (rel="stylesheet") -->
+    <link rel="stylesheet" href="../STYLES/CSS/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Welcome Header, what users will be greeted with when they first open the website ------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div id="topFirstHeader" class="topFirstHeaderClass">
+
+        <h1 id="pageTitle" class="pageTitleClass">MovieStats4Nerds</h1>
+        <p id="pageTitleSubtitle">Whether it's for your movie critique youtube channel, or for plain fun, compare your
+            favorite (or least favorite) movie stats here. Fly free nerd!</p>
+
+    </div>
+
+
+
+    <!-- Form and Movie list ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="movieFormAndList">
+
+
+        <!-- Form section ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="usersMovieFormDiv">
+
+            <!-- The form itself -->
+            <form id="usersMovieForm" aria-labelledby='movie-form-heading'>
+
+                <!-- form heading -->
+                <h2 id="movie-form-heading">Add Your Movie!</h2>
+
+
+                <!-- Inputs ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- title input -->
+                <label id="movieTitle">
+
+                    Movie Title:
+                    <input id="movieTitleInput" type="text" name='movie' placeholder="enter movie title here" />
+
+                </label>
+
+                <!-- critic score input -->
+                <label id="criticScore">
+
+                    Critic Score:
+                    <input id="criticMovieScoreInput" type="number" name='cscore' placeholder="enter a number" />
+                </label>
+
+                <!-- Audience score input -->
+                <label id="AudienceScore">
+                    Audience Score:
+                    <input id="audienceMovieScoreInput" type="number" name='ascore' placeholder="enter a number" />
+                </label>
+
+                <!-- Domestic (in-country) Sales input -->
+                <label id="domesticSales">
+                    Domestic Gross Sales:
+                    <input id="domSalesInput" type="number" name='dSales' placeholder="enter a number" />
+                </label>
+
+                <!-- Select Genre -->
+                <label id="genreSelect">
+                    Genre:
+                    <select id="genreSelectInput">
+                        <!-- genres -->
+                        <option value="selectgenre" id="selectgenre"> --Select a Genre--</option>
+
+                        <option value="horror" id="horror">Horror</option>
+                        <option value="action" id="action">Action</option>
+                        <option value="
+                        scienceFiction" id="scienceFiction">Science Fiction</option>
+                        <option value="drama" id="drama">Drama</option>
+                        <option value="thriller" id="thriller">Thriller</option>
+                        <option value="comedy" id="comedy">Comedy</option>
+                        <option value="western" id="western">Western</option>
+                        <option value="crime" id="crime">Crime</option>
+                        <option value="romance" id="romance">Romance</option>
+                        <option value="RomCom" id="romCom">RomCom (Romantic Comedy)</option>
+                        <option value="childrensAnim" id="childAnim">Children's Animation</option>
+                        <option value="animation" id="animation">Animation</option>
+                        <option value="noir" id="noir">Noir</option>
+                        <option value="drama" id="drama">Drama</option>
+                        <option value="documentary" id="documentary">Documentary</option>
+                        <option value="indie" id="indie">Indie/Art Film</option>
+                        <option value="bio" id="bio">Biography</option>
+                        <option value="mystery" id="mystery">Mystery</option>
+                        <option value="fantasy" id="fantasy">Fantasy</option>
+                        <option value="musical" id="musical">Musical</option>
+
+                    </select>
+
+                    <!-- Submit button -->
+                    <label id="addMovieButton">
+                        <button>Add Movie</button>
+                    </label>
+
+                </label>
+
+            </form>
+
+        </div>
+
+
+        <!-- User's Movie List/Box ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="userMovieListDiv">
+
+            <!-- movie cards go here -->
+
+            <span>User's Rated Movies
+                <div id="userMovieList">
+
+                </div>
+
+            </span>
+
+
+            <!-- clear button -->
+            <label id="clearButtonLabel">
+                <button id="clearButton">Clear List</button>
+            </label>
+
+            <!-- undo clear button, which recovers last version of the user's list -->
+            <label id="undoClearButtonLabel">
+                <span>Oops! Accidentally cleared your list?</span>
+                <button id="undoClearButton">Recover List</button>
+            </label>
+
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

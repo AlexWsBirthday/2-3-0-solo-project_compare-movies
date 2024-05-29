@@ -1,0 +1,13 @@
+body {
+    margin: 20px;
+    background-color: yellowgreen;
+}
+
+/* All text content styling (or font)*/
+div {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500px;
+
+}
+
+/* aligning the form and list side-by-side */
